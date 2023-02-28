@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 14</title>
+</head>
+<style>
+    .container div{
+        display: flex;
+    }
+    .container {
+        width: 700px;
+        box-shadow: 0 5px 10px gray;
+        padding: 10px;
+    }
+    .container .email input {
+        width: 200px;
+        height: 20px;
+        margin-top: 10px;
+        margin-left: 105px;
+    }
+    .container .message textarea {
+        margin-left: 120px;
+    }
+    .container .select select{
+        margin-top: 15px;
+        margin-left: 18px;
+        height: 20px;
+    }
+    .container .checkbox input{
+        margin-left: 105px;
+    } 
+    .container .message p {
+        margin-top: 70px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Use the following form to send a message to Example cafe</p>
+        <div class="email">
+            <p>Your email</p>
+            <input type="email" name="txtEmail" value="" size="20" maxlength="20">
+        </div>
+        <div class="message">
+            <p>Message</p>
+            <textarea name="textArea" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="select">
+            <p>How did you hear of us?</p>
+            <select name="" id="">
+                 <option value="Google">Google</option>
+                 <option value="Facebook">Facebook</option>
+                 <option value="Cốc Cốc">Cốc Cốc</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <p>Newsletter</p>
+            <input type="checkbox" name="chkBox" id=""> 
+            <p>Ensure this box is checked if you would like to receive email updates</p>
+        </div>
+        <div>
+            <button type="submit" >Send message</button>
+        </div>
+            
+    </div>
+    
+</body>
+
+</html>
