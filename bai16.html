@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 16</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;    
+    }
+    input[type=text], select {
+          
+        margin-right: 30px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-size: 10;
+        font-weight: 5px;
+        width: fit-content;
+        margin-left: 70px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    div{
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 100px;
+        width: 300px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px 2px gray;
+        background-color:rgb(192, 197, 197);
+    }
+    div form{
+           
+        display: flex;
+        flex-direction: column;
+    }
+    h2,h4,form{
+        margin: 5px;
+    }
+</style>
+<body>
+    <div>
+        <h2>Travel reservation form</h2>
+        <h4>* denotes mandotory</h4>
+        <form action="">
+            <label for="">Full name*:</label>
+            <input type="text" placeholder="FirstName LastName">
+        
+            <label for="">Email address*:</label>
+            <input type="text" placeholder="EMAIL_ADDRESS">
+        
+            <label for="">Select Tour Package*:</label>
+            <select  name="" style="width: fit-content;">
+              <option value="">Goa</option>
+              <option value="">Korea</option>
+            </select>
+            <label for="">Arrival date*:</label>
+            <input type="text" placeholder="m/d/y">
+            <label for="">Number of persons*:</label>
+            <input type="text" placeholder="FirstName LastName">
+            <label for="">What would you want to avail?*</label>
+            <tr>
+                <td><label for="">Boardinh</label>
+                </td>
+                <td> <input type="checkbox" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Fooding</label>
+                </td>
+                <td> <input type="checkbox" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Sight seeing</label>
+                </td>
+                <td> <input type="checkbox" name="" id=""></td>
+            </tr>
+            <label for="">Discout Coupon code:</label>
+            <input type="text" placeholder="UNKNOWN_TYPE">
+            <form action="">
+                <label for="">Terms and conditions*</label>
+            
+                <input type="radio" name="Tems">
+                <label for="">I agree</label></td>
+                <input type="radio" name="Tems">
+                <label for="">I disagree</label>
+        
+                <button type="submit">Complete reservation</button>
+            </form>
+            
+        </form>
+    </div>
+</body>
+</html>
